@@ -1,15 +1,67 @@
 import React from "react"
+import { useState } from 'react'
+import './MapSelector.css'
 
 function MapSelector(){
+    const teamOne = "ViperCore"
+    const teamTwo = "OsCaraVelho"
+
     return (
         <div className="MapBox">
-            <div className="MapVeto">
+            <div className="MapSelect">
                 <div className="">
-                    <p>{`${teamOne}
-                        VETO MAP`}</p>
+                    <p>{teamOne}</p>
+                    <p>VETO MAP</p>
                 </div>
-                <div>
-                    <img></img>
+                <div className="MapImage">
+                </div>
+            </div>
+            <div className="MapSelect">
+                <div className="">
+                    <p>{teamTwo}</p>
+                    <p>VETO MAP</p>
+                </div>
+                <div className="MapImage">
+                </div>
+            </div>
+            <div className="MapSelect">
+                <div className="">
+                    <p>{teamOne}</p>
+                    <p>SELECT MAP</p>
+                </div>
+                <div className="MapImage">
+                </div>
+            </div>
+            <div className="MapSelect">
+                <div className="">
+                    <p>{teamTwo}</p>
+                    <p>SELECT MAP</p>
+                </div>
+                <div className="MapImage">
+                </div>
+            </div>
+            <div className="MapSelect">
+                <div className="">
+                    <p>{teamOne}</p>
+                    <p>VETO MAP</p>
+                </div>
+                <div className="MapImage">
+                </div>
+            </div>
+            <div className="MapSelect">
+                <div className="">
+                    <p>{teamTwo}</p>
+                    <p>VETO MAP</p>
+                </div>
+                <div className="MapImage">
+                </div>
+            </div>
+            <div className="MapSelect">
+                <div className="">
+                    <p>DECIDER</p>
+                    <p>MAP</p>
+                </div>
+                <div className="MapImage">
                 </div>
             </div>
         </div>
